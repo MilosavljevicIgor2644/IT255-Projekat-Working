@@ -5,6 +5,7 @@ import { Injectable, EventEmitter } from '@angular/core';
 export class LoginService {
     private isLoggedIn: boolean; 
     loginStatusChanged: EventEmitter<boolean> = new EventEmitter();
+    private status: boolean;
 
     getLoggedInStatus() {
         return this.isLoggedIn;   

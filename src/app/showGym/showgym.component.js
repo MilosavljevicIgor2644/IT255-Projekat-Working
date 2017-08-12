@@ -13,6 +13,7 @@ var http_1 = require("@angular/http");
 var router_1 = require("@angular/router");
 var forms_1 = require("@angular/forms");
 var http_2 = require("@angular/http");
+var http_3 = require("@angular/http");
 var ShowGymComponent = (function () {
     function ShowGymComponent(http, router) {
         this.deleteForm = new forms_1.FormGroup({
@@ -25,7 +26,7 @@ var ShowGymComponent = (function () {
         }
     }
     ShowGymComponent.prototype.onDelete = function () {
-        var urlSearchParams = new URLSearchParams();
+        var urlSearchParams = new http_3.URLSearchParams();
         urlSearchParams.append('delete', this.deleteForm.value.delete);
         var data = "id=";
         data += this.deleteForm.value.delete.toString();

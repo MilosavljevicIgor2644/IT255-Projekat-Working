@@ -49,7 +49,6 @@ export class LoginComponent {
                     this.loginService.setLoggedInStatus(true);
                     this.router.navigate(['./']);
                     console.log(this.loginService.getLoggedInStatus());
-                    
                 }              
           }  
         );

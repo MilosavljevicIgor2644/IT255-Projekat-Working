@@ -11,13 +11,12 @@ import { LoginService } from '../login/login.service';
 })
 export class NavbarComponent implements OnInit {
     isLoggedIn: boolean;
-
     constructor(private loginService: LoginService) { }
 
     ngOnInit() {
         this.isLoggedIn = this.loginService.getLoggedInStatus();
         this.loginService.loginStatusChanged.subscribe(
-            status => {
+            (status: boolean) => {
                 this.isLoggedIn = status;
             }  
         )

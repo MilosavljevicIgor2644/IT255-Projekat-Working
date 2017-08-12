@@ -8,6 +8,7 @@ import { Observable } from 'rxjs/Observable';
 import { Gym } from '../gym';
 import { FormGroup, FormControl } from '@angular/forms';
 import { Headers } from '@angular/http';
+import { URLSearchParams } from '@angular/http';
 
 @Component ({
     selector: "showGym",
@@ -23,8 +24,6 @@ export class ShowGymComponent{
         delete: new FormControl()
     });
 
-    
-
     constructor(http: Http, router: Router) {
         this.http = http;
         this.router = router;
@@ -33,8 +32,6 @@ export class ShowGymComponent{
             this.router.navigate(['./']);
         }
     }
-
-
 
     onDelete():void{
         let urlSearchParams = new URLSearchParams();

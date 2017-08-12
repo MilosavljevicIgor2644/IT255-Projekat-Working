@@ -8,7 +8,6 @@ import { RegisterComponent } from '../register/register.component';
 import { AddGymComponent } from '../addGym/addgym.component';
 import { ShowGymComponent } from '../showGym/showGym.component';
 import { LoginComponent } from '../login/login.component';
-import { LogoutComponent } from '../logout/logout.component';
 
 const appRoutes: Routes = [
     { path: '', component: HomePageComponent  },
@@ -16,8 +15,7 @@ const appRoutes: Routes = [
     { path: 'register', component: RegisterComponent },
     { path: 'addGym', component: AddGymComponent },
     { path: 'showGym', component: ShowGymComponent },
-    { path: 'login', component: LoginComponent},
-    { path: 'logout', component: LogoutComponent }
+    { path: 'login', component: LoginComponent}
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);

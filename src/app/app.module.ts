@@ -13,14 +13,13 @@ import { RegisterComponent } from './register/register.component';
 import { AddGymComponent } from './addGym/addgym.component'; 
 import { ShowGymComponent } from './showGym/showGym.component';
 import { LoginComponent } from './login/login.component';
-import { LogoutComponent } from './logout/logout.component';
 
 import { LoginService } from './login/login.service';
 
 
 @NgModule({
   imports:      [ BrowserModule, HttpModule, FormsModule, ReactiveFormsModule, routing],
-  declarations: [ AppComponent, HomePageComponent, CalculatorComponent, NavbarComponent, RegisterComponent, AddGymComponent, ShowGymComponent, LoginComponent, LogoutComponent],
+  declarations: [ AppComponent, HomePageComponent, CalculatorComponent, NavbarComponent, RegisterComponent, AddGymComponent, ShowGymComponent, LoginComponent],
   providers:    [ LoginService ],
   bootstrap:    [ AppComponent ]
 })
